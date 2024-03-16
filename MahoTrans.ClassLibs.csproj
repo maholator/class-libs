@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Version>1.0.0</Version>
+        <Title>MahoTrans.ClassLibs</Title>
+        <Authors>Ryzhov Fyodor (aka. sym_ansel), Shinovon</Authors>
+        <Description>Helper java classes for MahoTrans.</Description>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageId>ru.nnproject.MahoTrans.ClassLibs</PackageId>
+        <PackageIcon>icon.png</PackageIcon>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Include="*.class"/>
+    </ItemGroup>
+
+    <PropertyGroup>
+        <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="icon.png" Pack="true" PackagePath="/"/>
+    </ItemGroup>
+
+</Project>
